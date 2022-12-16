@@ -1,4 +1,4 @@
-import { MarketOptions, OpenOrders } from '@project-serum/serum/lib/market';
+import { MarketOptions, OpenOrders } from '@openbook-dex/serum/lib/market';
 import {
   Account,
   Connection,

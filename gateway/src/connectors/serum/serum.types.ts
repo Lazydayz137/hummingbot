@@ -1,13 +1,13 @@
 import {
   Market as SMarket,
   Orderbook as SOrderBook,
-} from '@project-serum/serum';
+} from '@openbook-dex/serum';
 import {
   MarketOptions as SMarketOptions,
   OpenOrders as SOpenOrders,
   Order as SOrder,
   OrderParams as SOrderParams,
-} from '@project-serum/serum/lib/market';
+} from '@openbook-dex/serum/lib/market';
 import { PublicKey, TransactionSignature } from '@solana/web3.js';
 import BN from 'bn.js';
 import { Map as ImmutableMap, Set as ImmutableSet } from 'immutable';

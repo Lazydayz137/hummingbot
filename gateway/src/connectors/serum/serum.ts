@@ -1,4 +1,4 @@
-import { MARKETS } from '@project-serum/serum';
+import { MARKETS } from '@openbook-dex/serum';
 import { TokenInfo } from '@solana/spl-token-registry';
 import { Account as TokenAccount } from '@solana/spl-token/lib/types/state/account';
 import {
@@ -114,7 +114,7 @@ export class Serum {
   private async serumGetMarketsInformation(): Promise<BasicSerumMarket[]> {
     const marketsURL =
       this.config.markets.url ||
-      'https://raw.githubusercontent.com/project-serum/serum-ts/master/packages/serum/src/markets.json';
+      'https://raw.githubusercontent.com/openbook-dex/serum-ts/master/packages/serum/src/markets.json';
 
     let marketsInformation: BasicSerumMarket[];
 

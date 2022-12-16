@@ -1,15 +1,15 @@
 /*
 Apache License Version 2.0
 
-https://raw.githubusercontent.com/project-serum/serum-ts/master/LICENSE
+https://raw.githubusercontent.com/openbook-dex/serum-ts/master/LICENSE
  */
 
 import { getFilteredProgramAccounts } from '@blockworks-foundation/mango-client';
 import {
   getFeeTier,
   supportsSrmFeeDiscounts,
-} from '@project-serum/serum/lib/fees';
-import { DexInstructions } from '@project-serum/serum/lib/instructions';
+} from '@openbook-dex/serum/lib/fees';
+import { DexInstructions } from '@openbook-dex/serum/lib/instructions';
 import {
   _MARKET_STAT_LAYOUT_V1,
   getMintDecimals,
@@ -21,11 +21,11 @@ import {
   OrderParams,
   OrderParamsAccounts,
   OrderParamsBase,
-} from '@project-serum/serum/lib/market';
+} from '@openbook-dex/serum/lib/market';
 import {
   decodeEventQueue,
   decodeRequestQueue,
-} from '@project-serum/serum/lib/queue';
+} from '@openbook-dex/serum/lib/queue';
 import {
   closeAccount,
   initializeAccount,
@@ -35,8 +35,8 @@ import {
   SRM_MINT,
   TOKEN_PROGRAM_ID,
   WRAPPED_SOL_MINT,
-} from '@project-serum/serum/lib/token-instructions';
-import { getLayoutVersion } from '@project-serum/serum/lib/tokens_and_markets';
+} from '@openbook-dex/serum/lib/token-instructions';
+import { getLayoutVersion } from '@openbook-dex/serum/lib/tokens_and_markets';
 import {
   Account,
   AccountInfo,
