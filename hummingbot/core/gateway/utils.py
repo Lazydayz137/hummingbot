@@ -10,6 +10,9 @@ SMALL_W_SYMBOLS_PATTERN = re.compile(r"^w(\w+)")
 # {TOKEN}.e generally means a wrapped token on the Avalanche network.
 DOT_E_SYMBOLS_PATTERN = re.compile(r"(\w+)\.e$", re.IGNORECASE)
 
+# Sometimes a lower case "t" is used in "USDt", yet other instances "USDT" is expected.
+TETHER = re.compile("USDt",re.IGNORECASE)
+
 
 def unwrap_token_symbol(on_chain_token_symbol: str) -> str:
     patterns: List[Pattern] = [
