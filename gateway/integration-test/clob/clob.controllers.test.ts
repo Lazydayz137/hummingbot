@@ -1,4 +1,4 @@
-import { MARKETS } from '@project-serum/serum';
+import { MARKETS } from '@openbook-dex/serum';
 import BN from 'bn.js';
 import { StatusCodes } from 'http-status-codes';
 import 'jest-extended';

@@ -1,4 +1,4 @@
-import { MARKETS } from '@project-serum/serum';
+import { MARKETS } from '@openbook-dex/serum';
 import BN from 'bn.js';
 import express from 'express';
 import { Express } from 'express-serve-static-core';
